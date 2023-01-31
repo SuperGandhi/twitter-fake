@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+
+
+let greeting = {
+    sex: "",
+    women: "Hey girl",
+    man:_"Hey dude",
+    other: "Hey dud@" // properties
+}
+
+let message = null
+  if(greeting.sex === greeting.women){
+    message = greeting.women
+  } else if(greeting.sex === greeting.man){
+    message = greeting.men
+  }else{
+    message = greeting.other
+  }
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <h1>{greetings.sex === "man" ? greetings.man : greetings.women}</h1> */}
+      <h1>{message}</h1>
+      <button onClick={() => alert ('Hi world')}>HI THERE</button>
+    </>
   );
 }
 
