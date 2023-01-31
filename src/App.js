@@ -3,9 +3,12 @@
 let greeting = {
     sex: "",
     women: "Hey girl",
-    man:_"Hey dude",
+    man: "Hey dude",
     other: "Hey dud@" // properties
 }
+
+
+
 
 let message = null
   if(greeting.sex === greeting.women){
@@ -22,6 +25,7 @@ function App() {
       {/* <h1>{greetings.sex === "man" ? greetings.man : greetings.women}</h1> */}
       <h1>{message}</h1>
       <button onClick={() => alert ('Hi world')}>HI THERE</button>
+      <h2></h2>
     </>
   );
 }
